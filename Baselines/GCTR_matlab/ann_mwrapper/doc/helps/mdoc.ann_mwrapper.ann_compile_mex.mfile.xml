@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<?xml-stylesheet type='text/xsl' href='../mfile_doc.xsl'?>
+<MFileInfo mname='ann_compile_mex' filename='ann_compile_mex.m'>
+  <Context is_root='true'>
+    <Self path='mdoc.ann_mwrapper.ann_compile_mex.mfile.xml'/>
+    <Next path='mdoc.ann_mwrapper.anngplot.mfile.xml'/>
+    <Root path='mdoc.ann_mwrapper.mdir.xml'/>
+    <Parent path='mdoc.ann_mwrapper.mdir.xml'/>
+  </Context>
+  <MDoc mtype='function'>
+    <MFuncDecl funcname='ann_compile_mex'/>
+    <MHeadLine leadword='ANN_COMPILE_MEX'>Compiles the core-mex files of the ANN Lib</MHeadLine>
+    <MSection name='syntax'>
+      <MList listtype='unordered'>
+        <MListItem>
+          <MParagraph>ann_compile_mex</MParagraph>
+        </MListItem>
+      </MList>
+    </MSection>
+    <MSection name='description'>
+      <MList listtype='unordered'>
+        <MListItem>
+          <MParagraph>ann_compile_mex re-compiles the mex files.</MParagraph>
+        </MListItem>
+      </MList>
+    </MSection>
+    <MSection name='history'>
+      <MList listtype='unordered'>
+        <MListItem>
+          <MParagraph>Created by Dahua Lin, on Jul 06, 2007</MParagraph>
+        </MListItem>
+      </MList>
+    </MSection>
+  </MDoc>
+</MFileInfo>

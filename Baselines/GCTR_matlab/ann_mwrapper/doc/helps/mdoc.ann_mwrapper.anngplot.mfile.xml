@@ -1,0 +1,72 @@
+<?xml version='1.0'?>
+<?xml-stylesheet type='text/xsl' href='../mfile_doc.xsl'?>
+<MFileInfo mname='anngplot' filename='anngplot.m'>
+  <Context is_root='true'>
+    <Self path='mdoc.ann_mwrapper.anngplot.mfile.xml'/>
+    <Prev path='mdoc.ann_mwrapper.ann_compile_mex.mfile.xml'/>
+    <Next path='mdoc.ann_mwrapper.annquery.mfile.xml'/>
+    <Root path='mdoc.ann_mwrapper.mdir.xml'/>
+    <Parent path='mdoc.ann_mwrapper.mdir.xml'/>
+  </Context>
+  <MDoc mtype='function'>
+    <MFuncDecl funcname='anngplot'>
+      <Inputs>
+        <Var name='Xr'/>
+        <Var name='Xq'/>
+        <Var name='nnidx'/>
+      </Inputs>
+    </MFuncDecl>
+    <MHeadLine leadword='ANNGPLOT'>Plots the nearest neighbor graph</MHeadLine>
+    <MSection name='syntax'>
+      <MList listtype='unordered'>
+        <MListItem>
+          <MParagraph>anngplot(Xr, Xq, nnidx)</MParagraph>
+        </MListItem>
+        <MListItem>
+          <MParagraph>anngplot -doc</MParagraph>
+        </MListItem>
+      </MList>
+    </MSection>
+    <MSection name='arguments'>
+      <MTermList listtype='unordered'>
+        <MTermEntry term='Xr'>
+          <MParagraph>the set of reference points (2 x n matrix)</MParagraph>
+        </MTermEntry>
+        <MTermEntry term='Xq'>
+          <MParagraph>the set of query points (2 x nq matrix)</MParagraph>
+        </MTermEntry>
+        <MTermEntry term='nnidx'>
+          <MParagraph>the indices of the neighbors (k x n)</MParagraph>
+        </MTermEntry>
+        <MTermEntry term='linespec'>
+          <MParagraph>the specification of line plotting</MParagraph>
+        </MTermEntry>
+      </MTermList>
+    </MSection>
+    <MSection name='description'>
+      <MList listtype='unordered'>
+        <MListItem>
+          <MParagraph>anngplot(Xr, Xq, nnidx) plots the graph showing the neighboring relations, in which the neighboring points are linked with lines.</MParagraph>
+          <MParagraph>In the graph, the blue markers depict the reference points, the red markers depict the query points. The neighboring relations are expressed by the solid line sections in magenta color.</MParagraph>
+        </MListItem>
+        <MListItem>
+          <MParagraph>anngplot -doc or anngplot(&apos;-doc&apos;) shows the HTML document of anngplot in the MATLAB embedded browser.</MParagraph>
+        </MListItem>
+      </MList>
+    </MSection>
+    <MSection name='remarks'>
+      <MList listtype='unordered'>
+        <MListItem>
+          <MParagraph>Only 2D points are supported for plotting.</MParagraph>
+        </MListItem>
+      </MList>
+    </MSection>
+    <MSection name='history'>
+      <MList listtype='unordered'>
+        <MListItem>
+          <MParagraph>Created by Dahua Lin, on Jul 6, 2007</MParagraph>
+        </MListItem>
+      </MList>
+    </MSection>
+  </MDoc>
+</MFileInfo>

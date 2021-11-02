@@ -1,0 +1,170 @@
+
+.context_nav
+{
+    text-align: center
+}
+
+
+.context_nav
+{
+    background-color:#f0fff0;
+    color:black;
+    position:absolute;
+    width: 100%;
+    height: 20px;
+    top: 2px;
+}
+
+.context_link
+{
+    background-color: #a0e0a0;
+    color: #000080;
+    font-weight:bold;
+    position: absolute;
+    height: 20px;
+    text-align:center;
+}
+
+.prev
+{
+    width: 80px;
+    left: 2px;    
+}
+
+.next
+{    
+    width: 80px;
+    right: 2px;   
+}
+
+.root
+{
+    width: 80px;
+    right: 51%;    
+}
+
+.parent
+{
+    width: 80px;
+    left: 51%;
+}
+
+.mname
+{
+    margin-top: 50px;
+}
+
+.section_name
+{
+    background-color: white;
+    color:  #800000;
+    text-transform: capitalize;
+}
+
+.mparagraph
+{
+	padding-bottom: 5px;
+}
+
+.mlist_item
+{
+	padding-bottom: 8px;
+}
+
+
+.mterm_div
+{
+    padding-top: 8px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mtermlist
+{
+    border-collapse: collapse;        
+}
+
+.mtermlist th
+{    
+    font-weight: bold;        
+    text-align: left;
+    vertical-align: top;
+    padding: 3px 10px;    
+    border: 1px #e0e0e0 solid;   
+    color: black;
+    background-color: #f8f8f8;
+}
+
+.mtermlist td
+{        
+    text-align: left;
+    vertical-align: top;
+    padding: 3px 10px;
+    border: 1px #e0e0e0 solid;
+}
+
+.mtable_div
+{
+    padding-top: 8px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mtable
+{
+    border-collapse: collapse;
+}
+
+.mtable caption
+{
+    font-size: 110%;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: white;
+    color:  #000080;
+}
+
+.mtable th
+{
+    border-style:solid;
+    border-width:1px;
+    border-color:#808080;
+    background-color: #c0c0c0;
+    color: black;
+    padding: 4px 15px;    
+}
+
+.mtable td
+{
+    border-style:solid;
+    border-width:1px;
+    border-color:#808080;
+    background-color: white;
+    color: black;
+    padding: 4px 15px;    
+}
+
+.mcodeblock
+{
+    background-color: #fffff0;
+    color: #000060;
+    border-style:solid;
+    border-width:1px;
+    border-color:#808080;
+    padding: 5px 10px;
+}
+
+.mformula_line
+{
+    background-color: #f0f0ff;
+    color: black;
+    border-style:solid;
+    border-width:1px;
+    border-color:#808080;
+    padding: 5px 10px;
+}
+
+
+

@@ -1,0 +1,231 @@
+>> RunScript_cs
+114 [X2, score]=tensorMatching(X,P1,P2,indH1,valH1,[],[],indH,valH);
+>> RunScript_cs
+121 [X2, score]=tensorMatching(X,P1,P2,indH1,valH1,[],[],indH,valH);
+pair11: rot_error = 47.869, t_erro = 0.316
+pair12: rot_error = 61.098, t_erro = 0.933
+>> RunScript_cs
+334               	end
+>> RunScript_cs
+pair0: rot_error = 56.724, t_erro = 0.594
+pair1: rot_error = 56.261, t_erro = 0.252
+pair2: rot_error = 62.598, t_erro = 0.970
+pair3: rot_error = 149.634, t_erro = 1.743
+pair4: rot_error = 26.118, t_erro = 0.669
+pair5: rot_error = 46.329, t_erro = 2.416
+pair6: rot_error = 77.804, t_erro = 1.191
+pair7: rot_error = 33.271, t_erro = 0.632
+pair8: rot_error = 101.109, t_erro = 1.383
+pair9: rot_error = 86.950, t_erro = 2.130
+pair10: rot_error = 23.769, t_erro = 0.082
+pair11: rot_error = 12.354, t_erro = 0.316
+pair12: rot_error = 56.444, t_erro = 0.933
+pair13: rot_error = 52.509, t_erro = 1.049
+pair14: rot_error = 55.016, t_erro = 1.760
+pair15: rot_error = 83.352, t_erro = 0.566
+pair16: rot_error = 148.447, t_erro = 0.968
+pair17: rot_error = 63.828, t_erro = 0.767
+pair18: rot_error = 262.988, t_erro = 1.413
+pair19: rot_error = 35.007, t_erro = 0.552
+error
+pair20: rot_error = 50.000, t_erro = 1.000
+pair21: rot_error = 29.752, t_erro = 0.532
+error
+pair22: rot_error = 50.000, t_erro = 1.000
+error
+pair23: rot_error = 50.000, t_erro = 1.000
+pair24: rot_error = 63.379, t_erro = 1.185
+pair25: rot_error = 12.108, t_erro = 0.375
+pair26: rot_error = 86.971, t_erro = 1.772
+error
+pair27: rot_error = 50.000, t_erro = 1.000
+pair28: rot_error = 121.706, t_erro = 1.711
+pair29: rot_error = 80.534, t_erro = 1.600
+error
+pair30: rot_error = 50.000, t_erro = 1.000
+pair31: rot_error = 34.791, t_erro = 1.390
+error
+pair32: rot_error = 50.000, t_erro = 1.000
+error
+pair33: rot_error = 50.000, t_erro = 1.000
+pair34: rot_error = 66.545, t_erro = 1.605
+error
+pair35: rot_error = 50.000, t_erro = 1.000
+pair36: rot_error = 31.677, t_erro = 0.619
+pair37: rot_error = 89.390, t_erro = 1.720
+pair38: rot_error = 94.117, t_erro = 0.591
+pair39: rot_error = 211.418, t_erro = 0.651
+pair40: rot_error = 94.971, t_erro = 0.550
+pair41: rot_error = 68.889, t_erro = 1.089
+pair42: rot_error = 79.538, t_erro = 3.151
+pair43: rot_error = 46.949, t_erro = 0.973
+pair44: rot_error = 77.892, t_erro = 1.588
+pair45: rot_error = 28.138, t_erro = 0.945
+pair46: rot_error = 52.163, t_erro = 1.136
+pair47: rot_error = 82.735, t_erro = 1.366
+pair48: rot_error = 88.452, t_erro = 1.849
+error
+pair49: rot_error = 50.000, t_erro = 1.000
+pair50: rot_error = 60.276, t_erro = 0.943
+pair51: rot_error = 59.691, t_erro = 1.497
+pair52: rot_error = 76.968, t_erro = 1.089
+pair53: rot_error = 188.972, t_erro = 1.756
+pair54: rot_error = 93.646, t_erro = 2.202
+pair55: rot_error = 61.099, t_erro = 1.366
+pair56: rot_error = 60.649, t_erro = 0.929
+pair57: rot_error = 39.875, t_erro = 1.616
+pair58: rot_error = 29.986, t_erro = 0.521
+pair59: rot_error = 94.547, t_erro = 1.862
+pair60: rot_error = 61.525, t_erro = 0.667
+pair61: rot_error = 94.783, t_erro = 0.880
+pair62: rot_error = 113.310, t_erro = 1.641
+pair63: rot_error = 16.124, t_erro = 0.075
+pair64: rot_error = 92.809, t_erro = 0.810
+pair65: rot_error = 22.544, t_erro = 1.032
+pair66: rot_error = 78.668, t_erro = 1.556
+pair67: rot_error = 72.014, t_erro = 1.831
+pair68: rot_error = 97.945, t_erro = 1.246
+pair69: rot_error = 46.611, t_erro = 0.276
+pair70: rot_error = 21.533, t_erro = 0.659
+pair71: rot_error = 7.458, t_erro = 0.168
+pair72: rot_error = 75.185, t_erro = 1.614
+pair73: rot_error = 125.496, t_erro = 1.987
+pair74: rot_error = 40.370, t_erro = 0.329
+pair75: rot_error = 75.147, t_erro = 1.401
+pair76: rot_error = 45.398, t_erro = 0.571
+pair77: rot_error = 14.819, t_erro = 0.400
+pair78: rot_error = 15.222, t_erro = 0.239
+pair79: rot_error = 20.880, t_erro = 0.195
+pair80: rot_error = 207.714, t_erro = 1.895
+pair81: rot_error = 88.780, t_erro = 2.167
+pair82: rot_error = 79.062, t_erro = 0.744
+pair83: rot_error = 77.830, t_erro = 0.811
+pair84: rot_error = 106.430, t_erro = 1.920
+pair85: rot_error = 41.250, t_erro = 0.707
+pair86: rot_error = 126.032, t_erro = 1.727
+pair87: rot_error = 39.393, t_erro = 0.464
+pair88: rot_error = 49.328, t_erro = 1.079
+pair89: rot_error = 206.919, t_erro = 0.400
+pair90: rot_error = 140.515, t_erro = 2.163
+pair91: rot_error = 78.546, t_erro = 1.180
+pair92: rot_error = 82.766, t_erro = 1.149
+pair93: rot_error = 55.403, t_erro = 1.003
+pair94: rot_error = 49.738, t_erro = 0.529
+pair95: rot_error = 50.116, t_erro = 0.676
+pair96: rot_error = 119.123, t_erro = 1.102
+pair97: rot_error = 47.362, t_erro = 0.522
+pair98: rot_error = 224.695, t_erro = 3.139
+pair99: rot_error = 87.304, t_erro = 1.480
+pair100: rot_error = 88.058, t_erro = 1.211
+pair101: rot_error = 90.803, t_erro = 0.671
+pair102: rot_error = 230.192, t_erro = 2.146
+error
+pair103: rot_error = 50.000, t_erro = 1.000
+pair104: rot_error = 73.621, t_erro = 1.044
+error
+pair105: rot_error = 50.000, t_erro = 1.000
+error
+pair106: rot_error = 50.000, t_erro = 1.000
+pair107: rot_error = 136.734, t_erro = 0.766
+pair108: rot_error = 33.829, t_erro = 0.148
+pair109: rot_error = 36.855, t_erro = 0.739
+pair110: rot_error = 71.676, t_erro = 0.960
+pair111: rot_error = 45.535, t_erro = 1.044
+pair112: rot_error = 124.188, t_erro = 1.939
+pair113: rot_error = 51.860, t_erro = 0.760
+pair114: rot_error = 51.409, t_erro = 0.511
+pair115: rot_error = 72.833, t_erro = 0.691
+pair116: rot_error = 78.692, t_erro = 0.776
+pair117: rot_error = 86.025, t_erro = 0.637
+pair118: rot_error = 87.243, t_erro = 0.489
+pair119: rot_error = 66.484, t_erro = 0.481
+pair120: rot_error = 41.336, t_erro = 0.632
+pair121: rot_error = 85.130, t_erro = 1.021
+pair122: rot_error = 61.315, t_erro = 0.491
+pair123: rot_error = 68.829, t_erro = 1.443
+pair124: rot_error = 66.437, t_erro = 0.906
+pair125: rot_error = 211.318, t_erro = 2.030
+pair126: rot_error = 90.780, t_erro = 0.292
+pair127: rot_error = 85.146, t_erro = 1.262
+pair128: rot_error = 109.015, t_erro = 1.773
+pair129: rot_error = 129.265, t_erro = 1.759
+pair130: rot_error = 201.757, t_erro = 1.240
+pair131: rot_error = 76.241, t_erro = 0.712
+pair132: rot_error = 68.986, t_erro = 1.011
+pair133: rot_error = 71.957, t_erro = 0.935
+pair134: rot_error = 58.368, t_erro = 0.885
+pair135: rot_error = 54.748, t_erro = 0.903
+pair136: rot_error = 66.095, t_erro = 0.911
+pair137: rot_error = 68.820, t_erro = 1.042
+pair138: rot_error = 62.074, t_erro = 1.140
+pair139: rot_error = 63.436, t_erro = 1.103
+error
+pair140: rot_error = 50.000, t_erro = 1.000
+pair141: rot_error = 29.178, t_erro = 0.409
+pair142: rot_error = 67.361, t_erro = 0.971
+pair143: rot_error = 103.939, t_erro = 1.089
+pair144: rot_error = 23.655, t_erro = 0.510
+pair145: rot_error = 113.308, t_erro = 1.652
+pair146: rot_error = 52.225, t_erro = 0.755
+pair147: rot_error = 92.884, t_erro = 0.335
+pair148: rot_error = 52.577, t_erro = 0.926
+pair149: rot_error = 148.904, t_erro = 1.469
+pair150: rot_error = 28.407, t_erro = 0.420
+pair151: rot_error = 48.626, t_erro = 0.614
+error
+pair152: rot_error = 50.000, t_erro = 1.000
+error
+pair153: rot_error = 50.000, t_erro = 1.000
+pair154: rot_error = 59.610, t_erro = 0.881
+pair155: rot_error = 44.770, t_erro = 0.816
+pair156: rot_error = 72.162, t_erro = 0.539
+pair157: rot_error = 67.914, t_erro = 0.770
+pair158: rot_error = 41.795, t_erro = 0.416
+pair159: rot_error = 143.784, t_erro = 2.225
+pair160: rot_error = 33.656, t_erro = 0.578
+pair161: rot_error = 11.734, t_erro = 0.324
+pair162: rot_error = 88.727, t_erro = 0.919
+error
+pair163: rot_error = 50.000, t_erro = 1.000
+error
+pair164: rot_error = 50.000, t_erro = 1.000
+pair165: rot_error = 59.159, t_erro = 5.193
+pair166: rot_error = 59.595, t_erro = 2.922
+pair167: rot_error = 108.938, t_erro = 8.523
+pair168: rot_error = 20.459, t_erro = 0.796
+pair169: rot_error = 98.477, t_erro = 0.570
+pair170: rot_error = 112.106, t_erro = 15.771
+pair171: rot_error = 39.147, t_erro = 2.263
+pair172: rot_error = 54.790, t_erro = 5.429
+pair173: rot_error = 138.771, t_erro = 20.980
+pair174: rot_error = 147.742, t_erro = 3.632
+error
+pair175: rot_error = 50.000, t_erro = 1.000
+error
+pair176: rot_error = 50.000, t_erro = 1.000
+pair177: rot_error = 61.632, t_erro = 11.301
+pair178: rot_error = 177.903, t_erro = 6.501
+pair179: rot_error = 71.951, t_erro = 31.793
+pair180: rot_error = 27.477, t_erro = 2.989
+pair181: rot_error = 221.892, t_erro = 1.654
+pair182: rot_error = 43.011, t_erro = 7.491
+pair183: rot_error = 23.042, t_erro = 2.154
+pair184: rot_error = 239.586, t_erro = 8.842
+pair185: rot_error = 68.191, t_erro = 0.715
+pair186: rot_error = 22.054, t_erro = 0.189
+pair187: rot_error = 170.164, t_erro = 0.574
+pair188: rot_error = 68.766, t_erro = 6.972
+pair189: rot_error = 58.132, t_erro = 1.661
+pair190: rot_error = 14.723, t_erro = 0.374
+pair191: rot_error = 55.968, t_erro = 1.494
+pair192: rot_error = 68.264, t_erro = 6.130
+pair193: rot_error = 120.290, t_erro = 15.472
+pair194: rot_error = 82.490, t_erro = 4.810
+pair195: rot_error = 82.106, t_erro = 2.295
+pair196: rot_error = 65.487, t_erro = 0.251
+pair197: rot_error = 194.621, t_erro = 16.358
+pair198: rot_error = 243.737, t_erro = 7.036
+pair199: rot_error = 56.137, t_erro = 2.426
+pair200: rot_error = 52.753, t_erro = 2.637
+pair201: rot_error = 61.792, t_erro = 2.219
+recall=0.00495, rot_err = 7.458, trans_err=0.168, time=.3f>> RunScript_cs

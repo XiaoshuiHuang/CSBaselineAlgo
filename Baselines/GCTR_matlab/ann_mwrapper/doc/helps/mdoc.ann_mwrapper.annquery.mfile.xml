@@ -1,0 +1,236 @@
+<?xml version='1.0'?>
+<?xml-stylesheet type='text/xsl' href='../mfile_doc.xsl'?>
+<MFileInfo mname='annquery' filename='annquery.m'>
+  <Context is_root='true'>
+    <Self path='mdoc.ann_mwrapper.annquery.mfile.xml'/>
+    <Prev path='mdoc.ann_mwrapper.anngplot.mfile.xml'/>
+    <Root path='mdoc.ann_mwrapper.mdir.xml'/>
+    <Parent path='mdoc.ann_mwrapper.mdir.xml'/>
+  </Context>
+  <MDoc mtype='function'>
+    <MFuncDecl funcname='annquery'>
+      <Inputs>
+        <Var name='Xr'/>
+        <Var name='Xq'/>
+        <Var name='k'/>
+        <Var name='varargin'/>
+      </Inputs>
+      <Outputs>
+        <Var name='nnidx'/>
+        <Var name='dists'/>
+      </Outputs>
+    </MFuncDecl>
+    <MHeadLine leadword='ANNQUERY'>Performs Approximate K-Nearest-Neighbor query for a set of points</MHeadLine>
+    <MSection name='syntax'>
+      <MList listtype='unordered'>
+        <MListItem>
+          <MParagraph>nnidx = annquery(Xr, Xq, k)</MParagraph>
+        </MListItem>
+        <MListItem>
+          <MParagraph>nnidx = annquery(Xr, Xq, k, ...)</MParagraph>
+        </MListItem>
+        <MListItem>
+          <MParagraph>[nnidx, dists] = annquery(...)</MParagraph>
+        </MListItem>
+        <MListItem>
+          <MParagraph>annquery -doc</MParagraph>
+        </MListItem>
+      </MList>
+    </MSection>
+    <MSection name='arguments'>
+      <MTermList listtype='unordered'>
+        <MTermEntry term='Xr'>
+          <MParagraph>the reference points to construct the kd-tree (d x n matrix)</MParagraph>
+        </MTermEntry>
+        <MTermEntry term='Xq'>
+          <MParagraph>the query points (d x nq matrix)</MParagraph>
+        </MTermEntry>
+        <MTermEntry term='k'>
+          <MParagraph>the number of neighbors for each query point</MParagraph>
+        </MTermEntry>
+        <MTermEntry term='nnidx'>
+          <MParagraph>the array of indices of nearest neighbors (k x n matrix)</MParagraph>
+        </MTermEntry>
+        <MTermEntry term='dists'>
+          <MParagraph>the array of distances between the neighbors and the query points (k x n matrix)</MParagraph>
+        </MTermEntry>
+      </MTermList>
+    </MSection>
+    <MSection name='description'>
+      <MList listtype='unordered'>
+        <MListItem>
+          <MParagraph>nnidx = annquery(Xr, Xq, k) finds the nearest neighbors of the query points with default options.</MParagraph>
+          <MParagraph>Suppose we are dealing with d-dimensional points, and there are n reference points, and nq query points. Then Xr and Xq should be d x n and d x nq matrix respectively, with each column representing a point.</MParagraph>
+          <MParagraph>For each point in Xq (say the i-th point, that is Xq(:,i)), the function finds k nearest points to it in Xr. The indices of these k points in Xr are stored in the i-th column of nnidx.</MParagraph>
+        </MListItem>
+        <MListItem>
+          <MParagraph>nnidx = annquery(Xr, Xq, k, ...) performs the k-NN search with user-specified options. The options can be specified by name-value list.</MParagraph>
+          <MParagraph>Here are the options that can be set</MParagraph>
+          <MTermList listtype='unordered'>
+            <MTermEntry term='use_bdtree'>
+              <MParagraph>whether to use box-decomposition tree (default = false).</MParagraph>
+              <MParagraph>bd-tree is a variant kd-tree structure, which is more effectively in dealing with the highly clustered points by incorporating shrinking operations. However, it is not necessary for typical datasets.</MParagraph>
+            </MTermEntry>
+            <MTermEntry term='bucket_size'>
+              <MParagraph>the size of each bucket in the tree. (default = 1).</MParagraph>
+            </MTermEntry>
+            <MTermEntry term='split'>
+              <MParagraph>the name of the splitting rule in kd-tree construction. (default = &apos;suggest&apos;)</MParagraph>
+              <MParagraph>Here is a list of available split rules:</MParagraph>
+              <MTermList listtype='unordered'>
+                <MTermEntry term='std'>
+                  <MParagraph>the standard kd-tree splitting rule</MParagraph>
+                </MTermEntry>
+                <MTermEntry term='midpt'>
+                  <MParagraph>the mid-point splitting rule</MParagraph>
+                </MTermEntry>
+                <MTermEntry term='sl_midpt'>
+                  <MParagraph>the sliding mid-point splitting rule</MParagraph>
+                </MTermEntry>
+                <MTermEntry term='fair'>
+                  <MParagraph>the fair splitting rule</MParagraph>
+                </MTermEntry>
+                <MTermEntry term='sl_fair'>
+                  <MParagraph>the sliding fair splitting rule</MParagraph>
+                </MTermEntry>
+                <MTermEntry term='suggest'>
+                  <MParagraph>the suggested rule, which performs best for typical cases.</MParagraph>
+                </MTermEntry>
+              </MTermList>
+            </MTermEntry>
+            <MTermEntry term='shrink'>
+              <MParagraph>the name of the shrinking rule in bd-tree construction. (default = &apos;suggest&apos;)</MParagraph>
+              <MParagraph>Here is a list of available shrinking rules:</MParagraph>
+              <MTermList listtype='unordered'>
+                <MTermEntry term='none'>
+                  <MParagraph>no shrinking is performed. Without shrinking, bd-tree is equivalent to normal kd-tree.</MParagraph>
+                </MTermEntry>
+                <MTermEntry term='simple'>
+                  <MParagraph>simple shrinking.</MParagraph>
+                </MTermEntry>
+                <MTermEntry term='centroid'>
+                  <MParagraph>centroid shrinking.</MParagraph>
+                </MTermEntry>
+                <MTermEntry term='suggest'>
+                  <MParagraph>the suggested rule, which performs best for typical cases.</MParagraph>
+                </MTermEntry>
+              </MTermList>
+              <MParagraph>The shrink option only takes effect when use_bdtree is set to true.</MParagraph>
+            </MTermEntry>
+            <MTermEntry term='search_sch'>
+              <MParagraph>the search scheme to use. (default = &apos;std&apos;)</MParagraph>
+              <MParagraph>Here is a list of available search schemes:</MParagraph>
+              <MTermList listtype='unordered'>
+                <MTermEntry term='std'>
+                  <MParagraph>the standard k-NN search</MParagraph>
+                </MTermEntry>
+                <MTermEntry term='pri'>
+                  <MParagraph>the priority search</MParagraph>
+                  <MParagraph>By this scheme, the cell that contains the query point is located, and cells are visited in increasing order of distance from the query point.</MParagraph>
+                </MTermEntry>
+                <MTermEntry term='fr'>
+                  <MParagraph>the fixed-radius search</MParagraph>
+                  <MParagraph>By this scheme, only the reference points whose distances to the query point is less than a radius is found.</MParagraph>
+                </MTermEntry>
+              </MTermList>
+            </MTermEntry>
+            <MTermEntry term='eps'>
+              <MParagraph>the upper bound on the search error.</MParagraph>
+              <MParagraph>For 1 &lt;= i &lt;= k, the ratio between the distance to the i-th reported point and that to the true i-th nearest neighbor is at most 1 + eps.</MParagraph>
+              <MParagraph>Typically, eps controls the trade-off between efficiency and accuracy. When eps is set larger, the approximation is less accurate, and the search completes faster.</MParagraph>
+            </MTermEntry>
+            <MTermEntry term='radius'>
+              <MParagraph>the maximum distance between the neighbors and the query point. This option only takes effects when search_sch is set to &apos;fr&apos;. In other words, it only applies to fixed-radius search.</MParagraph>
+            </MTermEntry>
+          </MTermList>
+          <MParagraph>Generally, the default options can work well for typical cases. In special cases, you can change some options with others left in default value by only specifying the options you would like to change.</MParagraph>
+        </MListItem>
+        <MListItem>
+          <MParagraph>[nnidx, dists] = annquery(...) also returns the corresponding distance values.</MParagraph>
+          <MParagraph>In the output, dists is a k x nq double matrix. dists(i, j) is the distance of the j&apos;s query point&apos;s distance to its i-th neighbor.</MParagraph>
+          <MParagraph>Since that nnidx(i, j) is the index of j&apos;s query point&apos;s i-th neighbor, nnidx and dists are corresponding.</MParagraph>
+        </MListItem>
+        <MListItem>
+          <MParagraph>annquery -doc or annquery(&apos;-doc&apos;) shows the HTML help in the MATLAB embeded browser.</MParagraph>
+        </MListItem>
+      </MList>
+    </MSection>
+    <MSection name='remarks'>
+      <MList listtype='unordered'>
+        <MListItem>
+          <MParagraph>The function is based on a mex-wrapper (ann_mex.m in private folder) of the Approximate Nearest Neighbors Library version 1.1.1.</MParagraph>
+        </MListItem>
+        <MListItem>
+          <MParagraph>It is strongly recommended to gather all queries together and conduct the queries in batch. Since for each time this function is invoked, it constructs the kd-tree from the reference points. Hence, it may lead to considerable overhead if the queries are done one by one.</MParagraph>
+        </MListItem>
+        <MListItem>
+          <MParagraph>The found nearest points for each query point are sorted in ascending order of distance. It means that the first result refers to the point nearest to the query, while the second one refers to the second nearest, and so on.</MParagraph>
+        </MListItem>
+        <MListItem>
+          <MParagraph>If fixed-radius scheme is used (set search_sch option to &apos;fr&apos;), it is probable that for some query points, there are less than k neighbors within the specified range.</MParagraph>
+          <MParagraph>For example, if k = 5, and there are only 2 neighbors in the specified range for the i-th query, then nnidx(:, i) would be a column, in which the first 2 entries are the indices of the two nearest neighbors, while the last 3 entries are all zeros. Correspondingly, the last 3 entries in dists(:, i) are all inf.</MParagraph>
+          <MParagraph>To summarize, the function uses 0 to indicate that a neighbor is not found, and uses inf to give the corresponding distance. This only applies to fixed-radius scheme. (For other schemes, it is impossible that the neighbors are not sufficient).</MParagraph>
+        </MListItem>
+        <MListItem>
+          <MParagraph>If fixed-radius search is used, it is required that a positive radius be explicitly set.</MParagraph>
+        </MListItem>
+      </MList>
+    </MSection>
+    <MSection name='examples'>
+      <MList listtype='unordered'>
+        <MListItem>
+          <MParagraph>For each of 100 points of 5 dimensions, find its 3 nearesr neighbors in a reference set of 200 points, using default options.</MParagraph>
+          <MCodeBlock>
+            <Line>    Xq = rand(5, 100);</Line>
+            <Line>    Xr = rand(5, 200);</Line>
+            <Line></Line>
+            <Line>    inds = annquery(Xr, Xq, 3);</Line>
+          </MCodeBlock>
+          <MParagraph>If you would like to get the corresponding Euclidean distances as well, you can use the following command</MParagraph>
+          <MCodeBlock>
+            <Line>    [inds, dists] = annquery(Xr, Xq, 3);</Line>
+          </MCodeBlock>
+        </MListItem>
+        <MListItem>
+          <MParagraph>Use user-specified options.</MParagraph>
+          <MCodeBlock>
+            <Line>    % use priority search scheme with a sliding fair rule</Line>
+            <Line>    inds = annquery(Xr, Xq, k, &apos;search_sch&apos;, &apos;pri&apos;, &apos;split&apos;, &apos;sl_fair&apos;);</Line>
+            <Line></Line>
+            <Line>    % set positive error bound to allow some errors</Line>
+            <Line>    % in order to increase efficiency</Line>
+            <Line>    inds = annquery(Xr, Xq, k, &apos;eps&apos;, 0.1);</Line>
+            <Line></Line>
+            <Line>    % use fixed-radius search with all neighbors confined within</Line>
+            <Line>    % a range of radius 0.08</Line>
+            <Line>    inds = annquery(Xr, Xq, k, &apos;search_sch&apos;, &apos;fr&apos;, &apos;radius&apos;, 0.08);</Line>
+            <Line></Line>
+            <Line>    % use bd-tree construction</Line>
+            <Line>    inds = annquery(Xr, Xq, k, &apos;use_bdtree&apos;, true);</Line>
+            <Line></Line>
+            <Line>    % use bd-tree construction with centroid shrinking rule</Line>
+            <Line>    inds = annquery(Xr, Xq, k, &apos;use_bdtree&apos;, true, &apos;shrink&apos;, &apos;centroid&apos;);</Line>
+          </MCodeBlock>
+        </MListItem>
+        <MListItem>
+          <MParagraph>If you want to find neighbors for each point within the same point set with the query point itself excluded from neighbor set.</MParagraph>
+          <MCodeBlock>
+            <Line>    [inds, dists] = annquery(X, X, k+1, ...);</Line>
+            <Line></Line>
+            <Line>    inds = inds(2:end, :);</Line>
+            <Line>    dists = dists(2:end, :);</Line>
+          </MCodeBlock>
+          <MParagraph>This simple way is based on the rationale that the query point itself is the most nearest point to the query when searching in the same set. It works in most cases.</MParagraph>
+          <MParagraph>However, if there are two points reside in EXACTLY the same position, then it is probable that another point in the same position is removed while the query point remains. However, such circumstances rarely happen in real data.</MParagraph>
+        </MListItem>
+      </MList>
+    </MSection>
+    <MSection name='history'>
+      <MList listtype='unordered'>
+        <MListItem>
+          <MParagraph>Created by Dahua Lin, on Jul 06, 2007</MParagraph>
+        </MListItem>
+      </MList>
+    </MSection>
+  </MDoc>
+</MFileInfo>

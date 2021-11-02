@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<?xml-stylesheet type='text/xsl' href='../mdir_doc.xsl'?>
+<MDirInfo dirname='ann_mwrapper' dirtype='normal'>
+  <Context is_root='true'>
+    <Self path='mdoc.ann_mwrapper.mdir.xml'/>
+    <Root path='mdoc.ann_mwrapper.mdir.xml'/>
+  </Context>
+  <Subs>
+    <MFileRef name='ann_compile_mex' path='mdoc.ann_mwrapper.ann_compile_mex.mfile.xml'/>
+    <MFileRef name='anngplot' path='mdoc.ann_mwrapper.anngplot.mfile.xml'/>
+    <MFileRef name='annquery' path='mdoc.ann_mwrapper.annquery.mfile.xml'/>
+  </Subs>
+</MDirInfo>

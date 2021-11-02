@@ -1,0 +1,130 @@
+<html>
+	<head>
+		<title>ANN MATLAB Wrapper Readme</title>
+		<style type="text/css">
+			h2 {color:#800000}
+			.featurelist {padding-left:20px}
+			.featurelist dt{font-weight:bold; color:navy}
+			.cmd {font-weight:bold; color:blue; background-color:#ffffc0}
+			blockquote {font-style:italic}
+		</style>
+	</head>
+	<body>
+		<h1>ANN MATLAB Wrapper (ver 1.2) Readme</h1>
+		<p><a href="http://web.mit.edu/dhlin/www/">Dahua Lin</a>, on Aug 10, 2007</p>
+		<hr></hr>
+		
+		<h2>Introduction</h2>
+		
+		<p>
+		ANN MATLAB Wrapper is a MATLAB port of the 
+		<a href="http://www.cs.umd.edu/~mount/ANN/" target="_blank">Approximate Nearest Neighbor Library</a>,
+		which is a C++ library to facilitate both exact and approximate nearest neighbor searching.
+		This wrapper is based on <i>ANN C++ Lib version 1.1.1</i>.
+		</p>
+		
+		<p>
+		The tool aims at solving the problem of searching k nearest neighbors in a large set of multi-dimensional points. 
+		To this end, it first builds a data structure based on the set of reference points, and then search
+		neighbors for each query point using this structure. The ANN library implements two types of data structures 
+		for searching, including kd-trees and bd-trees (box-decomposition tree). 
+		In addition, we also offer the function to visualize the neighboring relations for 2D points.
+		</p>
+		
+		<p>
+		Here are two important suggestions from ANN C++ Library's authors:
+		<blockquote>
+		ANN performs quite efficiently for point sets ranging in size from thousands to hundreds of thousands, 
+		and in dimensions as high as 20. 
+		(For applications in significantly higher dimensions, the results are rather spotty.) 
+		</blockquote>
+		<blockquote>
+		Computing exact nearest neighbors in dimensions much higher than 8 seems to be a very difficult task. 
+		Few methods seem to be significantly better than a brute-force computation of all distances. However, 
+		it has been shown that by computing nearest neighbors approximately, it is possible to achieve 
+		significantly faster running times (on the order of 10's to 100's) often with a relatively small 
+		actual errors. ANN allows the user to specify a maximum approximation error bound, thus allowing 
+		the user to control the tradeoff between accuracy and running time. 
+		</blockquote>
+		</p>		
+
+		<p>
+		This MATLAB wrapper is a freeware released with the 
+		<a href="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html">GNU Lesser General Public License, version 2.1</a>. 
+		You can redistribute and/or modify it under the terms of the license.
+		</p>
+		
+		<h2>Installation</h2>
+		
+		<p>
+		To install the ANN MATLAB Wrapper into your MATLAB environment, you may follow the instructions below:
+		<ol>
+			<li>Unzip the package to any place that you like;</li>
+			<li>Enter MATLAB Environment;</li>
+			<li>Add the directory path to MATLAB</li>
+			<li>The core function is based on C-MEX files. 
+			    The downloaded package includes the pre-compiled mex file for MATLAB R2007a. 
+				If you are in a lower MATLAB version, you may need to re-compile the mex file by
+				<q class="cmd">ann_compile_mex</q></li>
+		</ol>
+		If all steps go well, you can now start using it.
+		</p>
+		
+		<p>
+		If you intend to re-compile the mex file, an ANSI C++ compiler that supports standard C++ is required.
+		</p>
+		
+		<h2>Get Help</h2>
+		
+		<p>
+		Elaborate help has been provided within each m-function, with sufficient examples to show their usage. 
+		In addition, well-formated HTML help of this toolbox is made available in the MATLAB Help Browser. 
+		You can readily refer to it by using <i>-doc</i> as the input argument for each function.
+		</p>
+						
+		<p>
+		All functions in the toolbox are sufficiently documented. There are a variety of ways to get help.
+		<ul>
+			<li>Type in <q class="cmd">help <i>function_name</i></q> to get the help of a specified function. 
+			This displays the text help in the command window.</li>
+			<li>Type in <q class="cmd"><i>function_name</i> -doc</q> to get the help of a specified function 
+			in form of HTML Web page. This opens the built-in help browser of MATLAB and shows the help page.</li>
+		</ul>
+		</p>
+		
+		<p>
+		Though the usage of the m-functions is explained in the documentation. 
+		However, it is beyond our scope to offer a tutorial on the fundamental knowledge in kd-tree and approximate
+		nearest neighbor searching. 
+		To get more information about this, you may refer to the 
+		<a href="http://www.cs.umd.edu/~mount/ANN/Files/1.1.1/ANNmanual_1.1.1.pdf" target="_blank">ANN Programming Manual</a>.
+		</p>
+		
+		<p>
+		Please feel free to write to me via <a href="mailto:dhlin@mit.edu">dhlin@mit.edu</a> if you have any questions 
+		about the toolbox.
+		</p>
+		
+		<h2>Version History</h2>
+		
+		<ul>
+			<li>Version 1.2 (2007-08-10)
+				<ul>
+					<li>Fix a bug that leads to crash by invalid memory accessing</li>
+					<li>Add the annquery_demo.m</li>
+				</ul>
+			</li>
+			<li>Version 1.0 (2007-07-01)
+				<ul>
+					<li>The first released version</li>
+					<li>Based on ANN C++ Library 1.1.1</li>
+				</ul>
+			</li>
+		</ul>
+		
+		<hr></hr>
+		
+		Copyright &copy; 2007 Dahua Lin. All rights reserved.
+		
+	</body>
+</html>
